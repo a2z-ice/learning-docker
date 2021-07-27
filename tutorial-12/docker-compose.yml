@@ -49,7 +49,7 @@ services:
       ./mongod.env
     ports:
       - 27018:27017
-    command: 'mongod --smallfiles --auth --keyFile /opt/keyfile/mongodb-keyfile --replSet tut12-replica-set'
+    command: 'mongod --auth --keyFile /opt/keyfile/mongodb-keyfile --replSet tut12-replica-set'
     depends_on:
         - tut12-mongo-keys
     networks:
